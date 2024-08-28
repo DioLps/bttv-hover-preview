@@ -7,22 +7,15 @@ let bttvEmotes: any = null;
 async function _fetchBttvEmotes() {
   try {
     const response = await axios.get(
-      "https://api.betterttv.net/3/cached/users/twitch/121059319"
+      "https://api.betterttv.net/3/emotes/shared/top?limit=100"
     );
 
-    const emotes = [
-      ...response.data.sharedEmotes,
-      ...response.data.channelEmotes,
-    ];
-
-    bttvEmotes = emotes.reduce((acc: any, emote: any) => {
+    bttvEmotes = response.data.reduce((acc: any, { emote }: any) => {
       acc[emote.code] = {
         url: `https://cdn.betterttv.net/emote/${emote.id}/2x`,
       };
-
       return acc;
     }, {});
-    console.log("BTTV emotes loaded");
   } catch (err) {
     console.error("Error fetching BTTV emotes:", err);
   }
@@ -36,7 +29,7 @@ export function activate(context: vscode.ExtensionContext) {
   const hoverProvider = vscode.languages.registerHoverProvider(
     { scheme: "*", language: "*" },
     {
-      provideHover(document, position, token) {
+      provideHover(document, position) {
         const range = document.getWordRangeAtPosition(position, /\/\/.*/);
         if (range) {
           const commentText = document.getText(range);
@@ -45,12 +38,6 @@ export function activate(context: vscode.ExtensionContext) {
           const emoteNameMatch = Object.keys(bttvEmotes).find((emote) =>
             commentText.includes(emote)
           );
-
-          //   // You can customize the message shown in hover
-          //   const hoverMessage = new vscode.MarkdownString(
-          //     `Comment detected: ${commentText} - ${emoteNameMatch}`
-          //   );
-          //   return new vscode.Hover(hoverMessage);
 
           if (emoteNameMatch) {
             const emoteUrl = bttvEmotes[emoteNameMatch]?.url;

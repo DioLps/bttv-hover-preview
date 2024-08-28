@@ -1,35 +1,26 @@
-# btv-hover-preview README
+# Better twitchTv emotes Hover Preview
 
-This is the README for your extension "btv-hover-preview". After writing up a brief description, we recommend including the following sections.
+This extension is a silly thing for all you my programmers fellas that also likes to watch twitch and are pretty much well knoledgeable about the BTTV emotes, now you can MonkaS your co-workers weird code and leave this extension on your recommendations for the workspace so all of your team can enjoy twitch chat experience on your codebase comments.
 
-## Features
+## OnHover preview
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+After creating a in-line comment ( // ), type the exact name of the twitch Emote and hover your mouse on it.
 
 For example:
 
-This extension contributes the following settings:
+\!\[feature X\]\(images/exampleOne.png\)
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+\!\[feature X\]\(images/exampleTwo.png\)
+
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+This may only works on files that are already saved to the disk.
+
+## About me
+
+I'm a frontend engineer, that codes stuff for fun. You can find me here: https://github.com/DioLps
+
 
 ## Release Notes
 
@@ -37,35 +28,6 @@ Users appreciate release notes as you update your extension.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Initial release of Better twitchTv emotes Hover Preview (bttv-hover-preview)
 
 **Enjoy!**
