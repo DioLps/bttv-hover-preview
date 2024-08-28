@@ -6,10 +6,9 @@ This extension is a silly thing for all you my programmers fellas that also like
 
 After creating a in-line comment ( // ), type the exact name of the twitch Emote and hover your mouse on it.
 
-For example:
+#### For example:
 
-\!\[figure one\]\(images/exampleOne.png\)
-
+<img src="images/exampleOne.png" style="display:block;margin: 0 auto;" alt="figure one" />
 
 ## Known Issues
 
