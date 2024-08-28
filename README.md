@@ -8,9 +8,7 @@ After creating a in-line comment ( // ), type the exact name of the twitch Emote
 
 For example:
 
-\!\[feature X\]\(images/exampleOne.png\)
-
-\!\[feature X\]\(images/exampleTwo.png\)
+\!\[figure one\]\(images/exampleOne.png\)
 
 
 ## Known Issues
@@ -20,7 +18,6 @@ This may only works on files that are already saved to the disk.
 ## About me
 
 I'm a frontend engineer, that codes stuff for fun. You can find me here: https://github.com/DioLps
-
 
 ## Release Notes
 
