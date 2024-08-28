@@ -8,7 +8,7 @@ After creating a in-line comment ( // ), type the exact name of the twitch Emote
 
 #### For example:
 
-<img src="images/exampleOne.png" style="display:block;margin: 0 auto;" alt="figure one" />
+![Screenshot](https://raw.githubusercontent.com/DioLps/bttv-hover-preview/raw/main/images/exampleOne.png)
 
 ## Known Issues
 
