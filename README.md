@@ -111,7 +111,7 @@ lick
 
 #### For example:
 
-![Screenshot](https://raw.githubusercontent.com/DioLps/bttv-hover-preview/raw/main/images/exampleOne.png)
+![Screenshot](https://raw.githubusercontent.com/DioLps/bttv-hover-preview/main/images/exampleOne.png)
 
 ## Known Issues
 
