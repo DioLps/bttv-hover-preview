@@ -6,7 +6,7 @@
   "engines": {
     "vscode": "^1.92.0"
   },
-  "publisher": "Rudy tools",
+  "publisher": "rudy-tools-box",
   "repository": {
     "type": "git",
     "url": "https://github.com/DioLps/bttv-hover-preview.git"
