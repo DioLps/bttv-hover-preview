@@ -11,7 +11,7 @@ async function _fetchBttvEmotes() {
     );
 
     bttvEmotes = response.data.reduce((acc: any, { emote }: any) => {
-      acc[emote.code] = {
+      acc[emote.code.toLowerCase()] = {
         url: `https://cdn.betterttv.net/emote/${emote.id}/2x`,
       };
       return acc;
@@ -36,13 +36,13 @@ export function activate(context: vscode.ExtensionContext) {
 
           // Check if the comment contains any BTTV emote name
           const emoteNameMatch = Object.keys(bttvEmotes).find((emote) =>
-            commentText.includes(emote)
+            commentText.toLowerCase().includes(emote)
           );
 
           if (emoteNameMatch) {
             const emoteUrl = bttvEmotes[emoteNameMatch]?.url;
             const markdown = new vscode.MarkdownString(
-              `![${emoteNameMatch}](${emoteUrl}) <br /><strong>${emoteNameMatch}</strong>`
+              `![${emoteNameMatch}](${emoteUrl}) <br /><strong>${emoteNameMatch.toUpperCase()}</strong>`
             );
             markdown.supportHtml = true;
             markdown.isTrusted = true; // Allow image rendering in markdown
